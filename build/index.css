@@ -1,0 +1,320 @@
+/* line 4, index.scss */
+html {
+  box-sizing: border-box;
+  font-size: 10px;
+  background: #4ac5d3;
+}
+@media (max-width: 600px) {
+  /* line 4, index.scss */
+  html {
+    font-size: 8px;
+  }
+}
+@media (max-width: 400px) {
+  /* line 4, index.scss */
+  html {
+    font-size: 6px;
+  }
+}
+
+/* line 18, index.scss */
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* line 22, index.scss */
+body {
+  font-family: 'Luckiest Guy', cursive;
+  color: #89260b;
+  text-align: center;
+  height: 100%;
+}
+
+/* line 29, index.scss */
+.container {
+  max-width: 600px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+/* line 39, index.scss */
+p {
+  font-family: 'Luckiest Guy';
+}
+
+/*Modals*/
+/* line 46, index.scss */
+.modal {
+  width: 66.6%;
+  background: white;
+  background: rgba(255, 255, 255, 0.9);
+  position: absolute;
+  top: 10%;
+  left: 16.5%;
+  z-index: 3;
+  border-radius: 10px;
+  border: 5px solid #89260b;
+}
+/* line 56, index.scss */
+.modal h2 {
+  font-size: 5rem;
+  margin: 2% 1% 0;
+}
+
+/*Intro Modal*/
+/* line 65, index.scss */
+.intro p {
+  font-size: 4rem;
+  margin-top: 2%;
+  cursor: pointer;
+  color: #0c7006;
+}
+/* line 70, index.scss */
+.intro p:hover {
+  color: black;
+}
+
+/*Option Modals*/
+/* line 78, index.scss */
+.mode div > p {
+  margin: 1% 0 0;
+  padding: 1%;
+  font-size: 3rem;
+  cursor: pointer;
+  color: #0c7006;
+}
+/* line 84, index.scss */
+.mode div > p:hover {
+  color: black;
+}
+
+/* line 90, index.scss */
+.mime-options :nth-child(odd) {
+  font-size: 3.5rem;
+  margin: 2% 0 0;
+  color: #0c7006;
+  cursor: pointer;
+}
+/* line 96, index.scss */
+.mime-options :nth-child(odd):hover {
+  cursor: pointer;
+  color: black;
+}
+/* line 100, index.scss */
+.mime-options :nth-child(2n) {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+/*Game Info*/
+/* line 109, index.scss */
+.info-container {
+  height: 240px;
+  width: 100%;
+}
+@media (max-width: 400px) {
+  /* line 109, index.scss */
+  .info-container {
+    height: 150px;
+  }
+}
+
+/* line 117, index.scss */
+h1 {
+  font-size: 6rem;
+  line-height: 1;
+  margin: 10px 0 10px;
+  text-shadow: 3px 3px white;
+}
+
+/* line 124, index.scss */
+.scores-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 2%;
+}
+/* line 129, index.scss */
+.scores-container > div {
+  background: #0c7006;
+  padding: 1%;
+  color: white;
+  border: 5px solid #89260b;
+  border-radius: 10px;
+  font-size: 2rem;
+}
+
+/* line 139, index.scss */
+.score {
+  width: 100%;
+  margin: -10px 0 0;
+  font-size: 5rem;
+}
+
+/* line 146, index.scss */
+.menu-options {
+  font-size: 4rem;
+  cursor: pointer;
+  text-shadow: 3px 3px white;
+}
+/* line 150, index.scss */
+.menu-options:hover {
+  color: black;
+}
+
+/* line 155, index.scss */
+.message, .message-whack {
+  margin-top: 1%;
+  display: block;
+  position: relative;
+  z-index: 10;
+  font-size: 5rem;
+  color: #0c7006;
+  text-shadow: 3px 3px white;
+}
+
+/* line 165, index.scss */
+.message-whack {
+  margin-top: 6%;
+}
+
+/*Game Board*/
+/* line 171, index.scss */
+.game-container {
+  width: 100vw;
+  padding: 0;
+  margin: 10px 0 0;
+  background: linear-gradient(#4ac5d3 40%, #000000 40.1%, #008000 41%, #008000 83%, #000000 83.1%, #0e5900 84%);
+}
+
+/* line 178, index.scss */
+.game {
+  width: 600px;
+  height: 350px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px auto 50px;
+  cursor: url("https://www.dropbox.com/s/th0zd8ufw5xkwye/mallet.png?raw=1"), pointer;
+}
+@media (max-width: 600px) {
+  /* line 178, index.scss */
+  .game {
+    width: 400px;
+  }
+}
+@media (max-width: 400px) {
+  /* line 178, index.scss */
+  .game {
+    width: 300px;
+  }
+}
+
+/* line 193, index.scss */
+.hole {
+  flex: 1 0 50%;
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+}
+/* line 198, index.scss */
+.hole:after {
+  display: block;
+  background: linear-gradient(135deg, #59260a, #a34310);
+  background-size: contain;
+  content: '';
+  width: 200px;
+  height: 80px;
+  border: 3px solid black;
+  border-radius: 75px 75px 0 0;
+  position: absolute;
+  z-index: 2;
+  bottom: -30px;
+  left: 50px;
+}
+@media (max-width: 600px) {
+  /* line 198, index.scss */
+  .hole:after {
+    left: 0px;
+  }
+}
+@media (max-width: 400px) {
+  /* line 198, index.scss */
+  .hole:after {
+    width: 150px;
+    height: 70px;
+  }
+}
+
+/* line 221, index.scss */
+.mole {
+  background: url("https://www.dropbox.com/s/6bxx8txo4kawb3k/mole.png?raw=1") bottom center no-repeat;
+  background-size: 120px 160px;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  height: 100%;
+  transition: all 0.4s;
+}
+@media (max-width: 400px) {
+  /* line 221, index.scss */
+  .mole {
+    background-size: 100px 138px;
+  }
+}
+
+/*Active Classes for Mime a Mole*/
+/* line 237, index.scss */
+.hole.up .mole {
+  top: 0;
+}
+
+/* line 241, index.scss */
+.avoid-clicks {
+  pointer-events: none;
+}
+
+/* line 245, index.scss */
+.hole1.active:after {
+  background: #d63100;
+}
+
+/* line 249, index.scss */
+.hole1.active.light:after {
+  background: red;
+}
+
+/* line 253, index.scss */
+.hole2.active:after {
+  background: #4c0760;
+}
+
+/* line 257, index.scss */
+.hole2.active.light:after {
+  background: #a602d8;
+}
+
+/* line 261, index.scss */
+.hole3.active:after {
+  background: #0a7e84;
+}
+
+/* line 265, index.scss */
+.hole3.active.light:after {
+  background: #0ff3ff;
+}
+
+/* line 269, index.scss */
+.hole4.active:after {
+  background: #846c0b;
+}
+
+/* line 273, index.scss */
+.hole4.active.light:after {
+  background: #ffe01c;
+}
